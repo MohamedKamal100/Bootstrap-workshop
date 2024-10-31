@@ -1,0 +1,312 @@
+/* ====================global classes===================== */
+:root {
+  --main-color: #e65f78;
+  --main-bg: #e7e7e7;
+  --nav-bg: #f8f9fa;
+}
+.main-color {
+  color: var(--main-color);
+}
+.main-bg {
+  background-color: var(--main-bg);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.top-25 {
+  top: 25%;
+}
+.p-w {
+  max-width: 500px;
+}
+/* ===============Navbar================================ */
+.navbar-bg {
+  background-color: var(--nav-bg);
+}
+a.nav-link {
+  transition: color 0.5s;
+  color: rgb(0, 0, 0);
+}
+#nav .nav-link:focus,
+#nav .nav-link:hover,
+#nav .navbar-nav .nav-link.active,
+#nav .navbar-nav .nav-link.show {
+  color: var(--main-color);
+}
+#nav .nav-link:focus,
+#nav .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+/* ==================End Navbar================= */
+
+/* ==================Start header ================= */
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../photos/header-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.fs-10 {
+  font-size: 50px;
+}
+header h1::after {
+  content: "";
+  animation: typing 2s alternate infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "D|";
+  }
+  5% {
+    content: "De|";
+  }
+  7% {
+    content: "Dev|";
+  }
+  10% {
+    content: "Deve|";
+  }
+  13% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  17% {
+    content: "Develop|";
+  }
+  20% {
+    content: "Developm|";
+  }
+  24% {
+    content: "Developme|";
+  }
+  25% {
+    content: "Developmen|";
+  }
+  27% {
+    content: "Development|";
+  }
+  30% {
+    content: "Development|";
+  }
+  32% {
+    content: "Developmen|";
+  }
+  35% {
+    content: "Developme|";
+  }
+  37% {
+    content: "Develop|";
+  }
+  40% {
+    content: "Develo|";
+  }
+  42% {
+    content: "Devel|";
+  }
+  45% {
+    content: "Deve|";
+  }
+  47% {
+    content: "Dev|";
+  }
+  50% {
+    content: "De|";
+  }
+  52% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  75% {
+    content: "Desig|";
+  }
+  77% {
+    content: "Desi|";
+  }
+  80% {
+    content: "Des|";
+  }
+  82% {
+    content: "De|";
+  }
+  85% {
+    content: "Dev|";
+  }
+  87% {
+    content: "Deve|";
+  }
+  90% {
+    content: "Devel|";
+  }
+  92% {
+    content: "Develo|";
+  }
+  95% {
+    content: "Develop|";
+  }
+  97% {
+    content: "Develope|";
+  }
+  100% {
+    content: "Developer|";
+  }
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.download-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.download-btn:hover {
+  color: black;
+  background-color: #fff;
+}
+
+/*^ shape of header Button scroll */
+
+.shape {
+  width: 40px;
+  height: 65px;
+  top: 75%;
+  animation: moving 2s infinite;
+}
+.dot {
+  width: 4px;
+  height: 10px;
+  top: 70%;
+}
+@keyframes moving {
+  0% {
+    top: 75%;
+  }
+  25% {
+    top: 85%;
+  }
+  50% {
+    top: 75%;
+  }
+  75% {
+    top: 75%;
+  }
+
+  100% {
+    top: 75%;
+  }
+}
+/*^ ---End button scroll ----- */
+
+/* ^---Start setting spin ---- */
+.setting {
+  background-color: #333333;
+}
+/* ==================End header================= */
+/* ==================Start About================= */
+
+#about .icons i {
+  border: 1px solid;
+  transition: color 0.5s;
+}
+#about .icons i:hover {
+  color: var(--main-color);
+  border: 1px var(--main-color) solid;
+}
+/* ==================End About================= */
+/* ==================Start Client================= */
+.carousel-indicators .active {
+  background-color: var(--main-color);
+}
+.carousel-indicators [data-bs-target] {
+  padding: 2px;
+}
+/* ==================End Client================= */
+/* ==================Start portfolio================= */
+#portfolio .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50px;
+}
+.nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: black;
+}
+
+.portfolio .content .layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.portfolio .content .overlay {
+  transition: 0.5s;
+  top: 100%;
+}
+.portfolio .content:hover .overlay {
+  top: 0;
+}
+.portfolio .content:hover .layer {
+  opacity: 1;
+}
+.portfolio .content img {
+  transition: scale 0.5s;
+}
+.portfolio .content:hover img {
+  scale: 1.4;
+}
+/* ==================End portfolio================= */
+/* ==================Start Work================= */
+
+/* ==================End Work================= */
+/* ==================Start Work================= */
+
+/* ==================End Work================= */
+/* ==================Start Work================= */
+
+/* ==================End Work================= */
